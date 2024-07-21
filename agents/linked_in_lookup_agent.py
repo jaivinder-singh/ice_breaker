@@ -7,7 +7,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.tools import Tool
 from langchain_community.chat_models import ChatOllama
 
-from toolss.tool import get_profile_url_tavily
+
 
 
 load_dotenv()
@@ -22,7 +22,7 @@ from langchain.agents import(
 from langchain import hub
 
 
-
+from tools.tools import *
 
 
 def lookup(name: str) -> str:
