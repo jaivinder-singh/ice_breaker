@@ -8,7 +8,7 @@ from langchain_core.tools import Tool
 from langchain_community.chat_models import ChatOllama
 
 
-
+from tools.tools import get_profile_url_tavily
 
 load_dotenv()
 from langchain.agents import(
@@ -21,8 +21,6 @@ from langchain.agents import(
 
 from langchain import hub
 
-
-from tools.tools import *
 
 
 def lookup(name: str) -> str:
@@ -58,6 +56,6 @@ def lookup(name: str) -> str:
 
 if __name__ == "__main__":
     print("start")
-    lookup("jaivinder")
+    lookup("jaivinder linkedin amelia")
     print("end")
 
