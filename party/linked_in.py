@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 def scrape_linked_in_profile(linkedin_profile_url: str, mock: bool = False):
     print("start")
     if mock:
-        linkedin_profile_url = "https://gist.githubusercontent.com/jaivinder-singh/e64fa1a706891646bd90265bfc9f945a/raw/daa2c8b31019999a63787ab5c0d5eb2cc1cb2f12/test_profile.json"
+        linkedin_profile_url = "https://gist.githubusercontent.com/jaivinder-singh/8aade1662db927836e73073849fd77cd/raw/92eb95da4ac3a9f62c31ee507479cbfbff45fb1f/test_profile.json"
         response = requests.get(linkedin_profile_url, timeout=10,)
        
 
@@ -21,7 +21,9 @@ def scrape_linked_in_profile(linkedin_profile_url: str, mock: bool = False):
         )
 
     data = response.json()
-
+    print("-------------------")
+    print(data)
+    print("-------------------")
     data = {
         k: v
         for k, v in data.items()
@@ -38,5 +40,5 @@ def scrape_linked_in_profile(linkedin_profile_url: str, mock: bool = False):
 
 if(__name__ == "__main__"):
     print(
-        scrape_linked_in_profile(linkedin_profile_url="https://www.linkedin.com/in/eden-marco",mock=True)
+        scrape_linked_in_profile(linkedin_profile_url="https://www.linkedin.com/in/jaivinder-singh-21362657")
     )

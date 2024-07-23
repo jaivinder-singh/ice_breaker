@@ -7,11 +7,11 @@ load_dotenv()
 
 
 twitter_client = tweepy.Client(
-    bearer_token=os.environ["TWITTER_BEARER_TOKEN"],
-    consumer_key=os.environ["TWITTER_API_KEY"],
-    consumer_secret=os.environ["TWITTER_API_KEY_SECRET"],
-    access_token=os.environ["TWITTER_ACCESS_TOKEN"],
-    access_token_secret=os.environ["TWITTER_ACCESS_TOKEN_SECRET"],
+    #bearer_token=os.environ["TWITTER_BEARER_TOKEN"],
+    #consumer_key=os.environ["TWITTER_API_KEY"],
+    #consumer_secret=os.environ["TWITTER_API_KEY_SECRET"],
+    #access_token=os.environ["TWITTER_ACCESS_TOKEN"],
+    #access_token_secret=os.environ["TWITTER_ACCESS_TOKEN_SECRET"],
 )
 
 
